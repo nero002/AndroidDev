@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Aisle</string>
+    <string name="title_Discover">Discover</string>
+    <string name="title_Notes">Notes</string>
+    <string name="title_Matches">Matches</string>
+    <string name="title_Profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="enter_your_phone_number">Enter Your \nPhone Number</string>
+    <string name="mobile_number">mobile number</string>
+    <string name="_91">+91</string>
+    <string name="continues">Continue</string>
+    <string name="enter_the_otp">Enter The \nOTP</string>
+    <string name="xxxx">xxxx</string>
+    <string name="notes">Notes</string>
+    <string name="personal_messages_to_you">Personal messages to you</string>
+    <string name="tap_to_review_50_notes">Tap to review 50+ notes</string>
+    <string name="interested_in_you">Interested In You</string>
+    <string name="premium_members_can_view_all_their_likes_at_once">Premium members can \nview all their likes at once</string>
+    <string name="upgrade">Upgrade</string>
+</resources>

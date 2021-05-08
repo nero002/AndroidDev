@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.OTPFragment">
+
+
+    <TextView
+        android:id="@+id/tv91m"
+        style="@style/text_view_mobile_fragment"
+        android:layout_marginStart="@dimen/dp_30"
+        android:text="@string/_91"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMobileObserve"
+        style="@style/text_view_mobile_fragment"
+        android:layout_marginTop="80dp"
+        android:letterSpacing="0.05"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@+id/tv91m"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableEnd="@drawable/ic_baseline_edit_24" />
+
+    <TextView
+        android:id="@+id/tvEnterOTP"
+        style="@style/hard_text"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/enter_the_otp"
+        app:layout_constraintStart_toStartOf="@+id/tv91m"
+        app:layout_constraintTop_toBottomOf="@+id/tvMobileObserve" />
+
+    <EditText
+        android:id="@+id/otp_view"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:autofillHints=""
+        android:background="@drawable/round_et"
+        android:hint="@string/xxxx"
+        android:inputType="number"
+        android:maxLength="4"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvEnterOTP"
+        app:layout_constraintTop_toBottomOf="@+id/tvEnterOTP" />
+
+
+    <Button
+        android:id="@+id/btnOtpContinue"
+        style="@style/button_yellow_contiue"
+        android:text="@string/continues"
+        app:layout_constraintStart_toStartOf="@+id/otp_view"
+        app:layout_constraintTop_toBottomOf="@+id/otp_view" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_20"
+        android:fontFamily="@font/gilroy_semi_bold"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnOtpContinue"
+        app:layout_constraintStart_toEndOf="@+id/btnOtpContinue"
+        app:layout_constraintTop_toTopOf="@+id/btnOtpContinue" />
+</androidx.constraintlayout.widget.ConstraintLayout>

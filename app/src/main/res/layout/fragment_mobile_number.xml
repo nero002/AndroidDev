@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.MobileNumberFragment">
+
+    <TextView
+        android:id="@+id/tvgetotp"
+        style="@style/text_view_mobile_fragment"
+        android:fontFamily="@font/gilroy_semi_bold"
+        android:text="@string/get_otp"
+        android:layout_marginStart="@dimen/dp_30"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tventer"
+        style="@style/hard_text"
+        android:text="@string/enter_your_phone_number"
+        app:layout_constraintStart_toStartOf="@+id/tvgetotp"
+        app:layout_constraintTop_toBottomOf="@+id/tvgetotp" />
+
+
+    <TextView
+        android:id="@+id/tv91"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/round_et"
+        android:fontFamily="@font/gilroy_bold"
+        android:padding="@dimen/dp_12"
+        android:text="@string/_91"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintStart_toStartOf="@+id/tventer"
+        app:layout_constraintTop_toBottomOf="@+id/tventer" />
+
+    <EditText
+        android:id="@+id/etMobileNumber"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="@dimen/dp_20"
+        android:autofillHints=""
+        android:background="@drawable/round_et"
+        android:hint="@string/mobile_number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:padding="12dp"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintStart_toEndOf="@+id/tv91"
+        app:layout_constraintTop_toBottomOf="@+id/tventer" />
+
+    <ProgressBar
+        android:id="@+id/pbProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnMobileContinue"
+        style="@style/button_yellow_contiue"
+        android:text="@string/continues"
+        app:layout_constraintStart_toStartOf="@+id/tv91"
+        app:layout_constraintTop_toBottomOf="@+id/etMobileNumber" />
+</androidx.constraintlayout.widget.ConstraintLayout>
