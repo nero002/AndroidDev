@@ -14,7 +14,7 @@ If you are checking out the app
 
 ## Libraries Used
 
-[Gradle](https://github.com/nero002/Movie-Reviews/blob/main/app/build.gradle)
+[Gradle](https://github.com/nero002/AndroidDev/blob/main/app/build.gradle)
 
 ## Tech Stacks
 * [Retrofit](http://square.github.io/retrofit/) + [OkHttp](http://square.github.io/okhttp/)
